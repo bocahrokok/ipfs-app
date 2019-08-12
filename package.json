@@ -1,0 +1,26 @@
+{
+  "name": "ipfs-app",
+  "version": "1.0.0",
+  "description": "An repo on learning about ipfs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bocahrokok/ipfs-app.git"
+  },
+  "author": "nurrizky imani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bocahrokok/ipfs-app/issues"
+  },
+  "homepage": "https://github.com/bocahrokok/ipfs-app#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.5",
+    "ipfs-http-client": "^33.1.1"
+  }
+}
