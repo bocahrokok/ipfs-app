@@ -17,7 +17,24 @@ app.get('/', (req, res)=> {
 });
 
 app.post('/upload', (req,res)=> {
+    const file = req.files.file;
+    const fileName = req.body.fileName;
+    const filePath = 'files/' + fileName;
 
+    file.mv(filePath, async (err) => {
+        if (err) {
+            console.log('Error: failed to download the file');
+            return res.status(500).send(err);
+        }
+
+        const fileHash = await addFile(fileName, filePath);
+        fs.unlink(filePath, (err)=> {
+            if(err) console.log(err);
+
+        });
+
+        res.render('upload', {fileName, fileHash});
+    });
 });
 
 
