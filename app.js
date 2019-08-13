@@ -1,5 +1,5 @@
 const ipfsClient = require('ipfs-http-client');
-cont express = require('express');
+const express = require('express');
 const bodyParser = require('body-parser');
 const fileUpload = require('express-fileupload');
 const fs = require('fs');
@@ -45,3 +45,8 @@ const addFile = async (fileName, filePath) => {
 
     return fileHash;
 }
+
+
+app.listen(3000, (req,res) => {
+    console.log("Server is listening on port 3000");
+});
