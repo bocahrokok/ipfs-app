@@ -22,7 +22,7 @@
     "ejs": "^2.6.2",
     "express": "^4.17.1",
     "express-fileupload": "^1.1.5",
-    "ipfs": "^0.37.0",
+    "ipfs": "^0.65.0",
     "ipfs-http-client": "^33.1.1"
   }
 }
